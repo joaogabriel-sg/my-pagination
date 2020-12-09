@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --primary: #c014c0;
+  --primary-light: #c790c7;
+  --dark: #1a1919;
+  --light: #f0f0f0;
+}
+
+html,
+body {
+  height: 100vh;
+  background: var(--dark);
+  color: var(--light);
+}
+
+.container {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--primary);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+header h1 {
+  font-size: 3.2rem;
+}
+
+#pagination .list {
+  margin: 3.2rem 0;
+}
+
+#pagination .list .item {
+  padding: 1.6rem;
+  border-bottom: 1px solid var(--primary);
+  font-size: 1.8rem;
+}
+
+#pagination .list .item:hover {
+  background: var(--primary-light);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls div:not(.numbers) {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.controls .numbers {
+  display: flex;
+  align-items: center;
+}
+
+.controls .numbers div:hover,
+.controls .numbers div.active {
+  color: var(--primary);
+  font-weight: bold;
+}
